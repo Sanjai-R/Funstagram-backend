@@ -19,7 +19,7 @@ app.get("/",(req, res) =>{
     res.send("Hey your connected successfully")
 })
 
-const db_connection = "mongodb+srv://Sanjai:Sanjai123@cluster0.rsqxc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const db_connection = "Your DB connection"
 mongoose
   .connect(db_connection, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
