@@ -23,7 +23,7 @@ const db_connection = "mongodb+srv://Sanjai:Sanjai123@cluster0.rsqxc.mongodb.net
 mongoose
   .connect(db_connection, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
-    app.listen(PORT, () =>
+    app.listen(process.env.PORT || 3000, () =>
       console.log(`Server Running on Port: http://localhost:${PORT}`)
     )
   )
