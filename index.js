@@ -19,9 +19,9 @@ app.get("/",(req, res) =>{
     res.send("Hey your connected successfully")
 })
 
-//database connections
+const db_connection = "mongodb+srv://Sanjai:Sanjai123@cluster0.rsqxc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose
-  .connect(process.env.db_connection, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(db_connection, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
     app.listen(PORT, () =>
       console.log(`Server Running on Port: http://localhost:${PORT}`)
