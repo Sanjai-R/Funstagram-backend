@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const secret = "test"; //your secrets
+const secret = "test"; //your privacy code
 
 const auth = async (req, res, next) => {
   try {
